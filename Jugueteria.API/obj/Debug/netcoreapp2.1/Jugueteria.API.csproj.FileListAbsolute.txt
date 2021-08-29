@@ -1,0 +1,17 @@
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\obj\Debug\netcoreapp2.1\Jugueteria.API.AssemblyInfoInputs.cache
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\obj\Debug\netcoreapp2.1\Jugueteria.API.AssemblyInfo.cs
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\obj\Debug\netcoreapp2.1\Jugueteria.API.csproj.CoreCompileInputs.cache
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\obj\Debug\netcoreapp2.1\Jugueteria.API.RazorAssemblyInfo.cache
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\obj\Debug\netcoreapp2.1\Jugueteria.API.RazorAssemblyInfo.cs
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\bin\Debug\netcoreapp2.1\Jugueteria.API.deps.json
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\bin\Debug\netcoreapp2.1\Jugueteria.API.runtimeconfig.json
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\bin\Debug\netcoreapp2.1\Jugueteria.API.runtimeconfig.dev.json
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\bin\Debug\netcoreapp2.1\Jugueteria.API.dll
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\bin\Debug\netcoreapp2.1\Jugueteria.API.pdb
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\obj\Debug\netcoreapp2.1\Jugueteria.API.RazorTargetAssemblyInfo.cache
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\obj\Debug\netcoreapp2.1\Jugueteria.API.dll
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\obj\Debug\netcoreapp2.1\Jugueteria.API.pdb
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\obj\Debug\netcoreapp2.1\Jugueteria.API.genruntimeconfig.cache
+C:\Users\vidal\Desktop\Examen Aspiria\Examen Aspiria8\Jugueteria\Jugueteria.API\obj\Debug\netcoreapp2.1\Jugueteria.API.csprojAssemblyReference.cache

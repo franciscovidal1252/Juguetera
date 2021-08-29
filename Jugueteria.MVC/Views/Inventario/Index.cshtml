@@ -1,0 +1,167 @@
+﻿@model IEnumerable<Jugueteria.MVC.Models.Inventario>
+
+@{
+    ViewData["Title"] = "Inventario";
+}
+
+<div class="main-content">
+    <div class="section__content section__content--p30">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <button type="submit" data-toggle="modal" data-placement="top" data-target="#InventarioNuevoModal" class="btn btn-success btn-sm">
+                        <i class="fa fa-plus"></i> Add New
+                    </button>
+                </div>
+                <div class="col-lg-12">
+                    <br />
+                    <div class="table-responsive table--no-card m-b-30">
+                        <table class="table table-striped table-earning">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">Id</th>
+                                    <th class="text-center">Name</th>
+                                    <th class="text-center">Age</th>
+                                    <th class="text-center">Company</th>
+                                    <th class="text-center">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (var articulo in Model)
+                                    {
+                                        <tr>
+                                            <td class="text-center">
+                                                @articulo.Id
+                                            </td>
+                                            <td>
+                                                @articulo.Nombre
+                                            </td>
+                                            <td class="text-center">
+                                                @articulo.RestriccionEdad
+                                            </td>
+                                            <td>
+                                                @articulo.Compania
+                                            </td>
+                                            <td>
+                                                <div class="table-data-feature">
+                                                    <button class="item icon-edit" data-toggle="modal" data-placement="top" onclick="editarArticulo(@articulo.Id)" data-target="#InventarioModal" title="Edit">
+                                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                    </button>
+                                                    <button id="btnEliminar" class="item icon-delete" data-toggle="tooltip" data-placement="top" onclick="borrarArticulo(@articulo.Id)" title="Delete">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="InventarioModal" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Editar Artículo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-header">
+                        <strong>Editar</strong> Artículo - <p id="id-Articulo"></p>
+                    </div>
+                    <br />
+                    <div class="card-body card-block">
+                        <form action="" method="post" class="form">
+                            <div class="form-group">
+                                <label for="inputIsValid" class=" form-control-label">Name</label> <p id="nombreArticuloMsn"></p>
+                                <input type="text" id="nombreArticulo" class="form-control" maxlength="50" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputIsInvalid" class=" form-control-label">Price</label> <p id="precioArticuloMsn"></p>
+                                <input type="text" id="precioArticulo" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputIsInvalid" class=" form-control-label">Company</label> <p id="companiaArticuloMsn"></p>
+                                <input type="text" id="companiaArticulo" class="form-control" maxlength="50" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputIsInvalid" class=" form-control-label">Max Age</label> <p id="maxEdadArticuloMsn"></p>
+                                <input type="number" id="maxEdadArticulo" class="form-control" min="0" max="15" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputIsInvalid" class=" form-control-label">Descrition</label> <p id="descripcionArticuloMsn"></p>
+                                <textarea type="text" id="descripcionArticulo" class="form-control"  maxlength="100" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="guardarArticuloEditado()">Guardar Cambios</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" id="InventarioNuevoModal" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Guardar Artículo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-header">
+                        <strong>Guardar</strong> Artículo
+                    </div>
+                    <br />
+                    <div class="card-body card-block">
+                        <form action="" method="post" class="form" id="nuevoForm">
+                            <div class="form-group">
+                                <label for="inputIsValid" class=" form-control-label">Name</label> <p id="nombreArticuloNuevoMsn"></p>
+                                <input type="text" id="nombreArticuloNuevo" class="form-control" maxlength="50" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputIsInvalid" class=" form-control-label">Price</label> <p id="precioArticuloNuevoMsn"></p>
+                                <input type="text" id="precioArticuloNuevo" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputIsInvalid" class=" form-control-label">Company</label> <p id="companiaArticuloNuevoMsn"></p>
+                                <input type="text" id="companiaArticuloNuevo" class="form-control" maxlength="50" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputIsInvalid" class=" form-control-label">Max Age</label> <p id="maxEdadArticuloNuevoMsn"></p>
+                                <input type="number" id="maxEdadArticuloNuevo" class="form-control" min="0" max="15" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputIsInvalid" class=" form-control-label">Descrition</label><p id="descripcionArticuloNuevoMsn"></p>
+                                <textarea type="text" id="descripcionArticuloNuevo" class="form-control" maxlength="100" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="guardarArticulo()">Guardar Cambios</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/js/Inventario/JSInventario.js"></script>
+<script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
