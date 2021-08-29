@@ -213,7 +213,7 @@ WriteAttributeValue("", 2918, articulo.Id, 2918, 12, false);
                         ");
             EndContext();
             BeginContext(4333, 1813, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0464e892ed3844558fc7391c936c6877", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "51c9a5c837ac43cd94c69c46ca61af4a", async() => {
                 BeginContext(4376, 1763, true);
                 WriteLiteral(@"
                             <div class=""form-group"">
@@ -285,7 +285,7 @@ WriteAttributeValue("", 2918, articulo.Id, 2918, 12, false);
             WriteLiteral("r</strong> Artículo\r\n                    </div>\r\n                    <br />\r\n                    <div class=\"card-body card-block\">\r\n                        ");
             EndContext();
             BeginContext(7327, 1876, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "097637570eb546c382bcc2b7f7e6a266", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc218b6e08ae44c996141018f2fb1068", async() => {
                 BeginContext(7385, 1811, true);
                 WriteLiteral(@"
                             <div class=""form-group"">
@@ -346,7 +346,7 @@ WriteAttributeValue("", 2918, articulo.Id, 2918, 12, false);
 ");
             EndContext();
             BeginContext(9593, 78, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63990dd74de74131b0e2fb9b95f126b1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ef4579f360144aa8aab1570068cc4e3", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -365,7 +365,7 @@ WriteAttributeValue("", 2918, articulo.Id, 2918, 12, false);
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(9673, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c87b3579f8a4573a733a3442c56c47c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4260637ff17343c9952756a725b94f5f", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
